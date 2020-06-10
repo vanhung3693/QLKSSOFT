@@ -174,5 +174,58 @@
                 <Label>lượt ra</Label>
             </StackPanel>
         </Border>
+
+        <Grid Grid.Column="1" Grid.RowSpan="8">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row ="0">
+                <Button>Sơ đồ khách sạn</Button>
+            </Grid>
+            <Grid Grid.Row ="1">
+                <Button>Khách sạn</Button>
+            </Grid>
+            <Grid Grid.Row ="2">
+                <Button>Loại phòng và Giá</Button>
+            </Grid>
+            <Grid Grid.Row ="3">
+                <Button>Dịch vụ và kho</Button>
+            </Grid>
+            <Grid Grid.Row ="4">
+                <Button>Công nợ</Button>
+            </Grid>
+            <Grid Grid.Row ="5">
+                <Button>Tiên chi và thu</Button>
+            </Grid>
+            <Grid Grid.Row ="6">
+                <Button>Doanh thu</Button>
+            </Grid>
+            <Grid Grid.Row ="7">
+                <Button>Thống kê</Button>
+            </Grid>
+            <Grid Grid.Row ="8">
+                <Button>Danh sách hóa đơn</Button>
+            </Grid>
+            <Grid Grid.Row ="9">
+                <Button>Kiểm tra $ tài khoản</Button>
+            </Grid>
+            <Grid Grid.Row ="10">
+                <Button>Kết quả kinh doanh</Button>
+            </Grid>
+            <Grid Grid.Row ="11">
+                <Button>Báo Cáo</Button>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
