@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dapino-Summer-Holiday-Hotel.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -64,6 +67,9 @@
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomWindow.xaml.cs">
+      <DependentUpon>RoomWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +111,55 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\RoomWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-hotel-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-project-diagram-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-money-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-coffee-to-go-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-attach-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-3d-rotate-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-refresh-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dapino-Summer-Holiday-Hotel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Dapino-Summer-Holiday-Hotel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-statistics-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-bill-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-us-dollar-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-test-results-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-report-card-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QLKSSOFT.APP.Views"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+        Title="Phần Mềm Quản Lý Khách Sạn ABC" Height="450" Width="800" WindowState="Maximized">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -46,23 +46,71 @@
                 </Grid>
             </Border>
             <Grid Grid.Column="2">
-                <Button Background="Blue" Foreground="White">Chuyển Phòng</Button>
+                <Button Background="#FF6262F3" Foreground="White">Chuyển Phòng</Button>
             </Grid>
             <Grid Grid.Column="4">
-                <Button Background="Blue" Foreground="White">Hủy Phòng</Button>
+                <Button Background="#FF6262F3" Foreground="White">Hủy Phòng</Button>
             </Grid>
             <Grid Grid.Column="6">
-                <Button Background="Blue" Foreground="White">Gộp Phòng</Button>
+                <Button Background="#FF6262F3" Foreground="White">Gộp Phòng</Button>
             </Grid>
             <Grid Grid.Column="8">
-                <Button Background="Blue" Foreground="White">Đặt Phòng</Button>
+                <Button Background="#FF6262F3" Foreground="White">Đặt Phòng</Button>
             </Grid>
             <Grid Grid.Column="10">
-                <Button Background="Blue" Foreground="White">Giao Ca</Button>
+                <Button Background="#FF6262F3" Foreground="White">Giao Ca</Button>
             </Grid>
         </Grid>
         <Grid Grid.Row="2">
-            <ScrollViewer Name="c_dataGridScrollViewer"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Border CornerRadius="2" Grid.RowSpan="2">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#FF3B4647" Offset="0.0"/>
+                            <GradientStop Color="Black" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+                <Label Foreground="White"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24">
+                    Lầu 1
+                </Label>
+            </Grid>
+
+            <StackPanel Orientation="Vertical"  Background="#FFE6E62C" Grid.Row="0" Grid.Column="2" MouseLeftButtonUp="StackPanel_MouseLeftButtonUp">
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Foreground="Black"  FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16">
+                        16/05
+                    </Label>
+                    <Label Foreground="Black"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                    </Label>
+                    <Label Foreground="Black"  FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16">
+                        12 : 42
+                    </Label>
+                </StackPanel>
+                <Label Foreground="Black"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40">
+                    101
+                </Label>
+                <Label Foreground="Blue"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                    Đang dọn
+                </Label>
+                <Label Foreground="Black"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24">
+                    Lạnh đơn
+                </Label>
+            </StackPanel>
+            <!--<ScrollViewer Name="c_dataGridScrollViewer"
                Loaded="c_dataGridScrollViewer_Loaded"
               VerticalScrollBarVisibility="Auto"
               HorizontalScrollBarVisibility="Auto">
@@ -114,8 +162,9 @@
                         </TransformGroup>
                     </DataGrid.LayoutTransform>
                 </DataGrid>
-            </ScrollViewer>
+            </ScrollViewer>-->
         </Grid>
+
         <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -134,37 +183,37 @@
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <Button Background="Green" Foreground="White">Trống: 3</Button>
+                <Button Background="#FF58FD58" Foreground="White">Trống: 3</Button>
             </Grid>
-            
+
             <Grid Grid.Column="2">
-                <Button Background="SkyBlue" Foreground="White">Có khách: 2</Button>
+                <Button Background="#FF9EE1FD" Foreground="White">Có khách: 2</Button>
             </Grid>
 
             <Grid Grid.Column="4">
-                <Button Background="Gray" Foreground="White">Chờ Dọn: 3</Button>
+                <Button Background="#FF83979E" Foreground="White">Chờ Dọn: 3</Button>
             </Grid>
 
             <Grid Grid.Column="6">
-                <Button Background="Yellow" Foreground="White">Đang dọn: 2</Button>
+                <Button Background="#FFE6E62C" Foreground="White">Đang dọn: 2</Button>
             </Grid>
 
             <Grid Grid.Column="8">
-                <Button Background="Violet" Foreground="White">Tạm rời: 1</Button>
+                <Button Background="#FFF9B1F9" Foreground="White">Tạm rời: 1</Button>
             </Grid>
 
             <Grid Grid.Column="10">
-                <Button Background="Red" Foreground="White">Đang sửa: 0</Button>
+                <Button Background="#FFF94A4A" Foreground="White">Đang sửa: 0</Button>
             </Grid>
-            
+
             <Grid Grid.Column="12">
-                <Button Background="Red" Foreground="White">Bán lẻ</Button>
+                <Button Background="#FFA02424" Foreground="White">Bán lẻ</Button>
             </Grid>
         </Grid>
 
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="6">
             <StackPanel Orientation="Horizontal">
-                <Label>Thống kê nhanh: Từ </Label>
+                <Label>Thống kê nhanh: Từ</Label>
                 <Label>12h</Label>
                 <Label>01/06/2020</Label>
                 <Label>Có</Label>
@@ -172,6 +221,8 @@
                 <Label>lượt vào</Label>
                 <Label>2</Label>
                 <Label>lượt ra</Label>
+                <Label></Label>
+                <TextBlock x:Name="dateText" VerticalAlignment="Center" HorizontalAlignment="Right" FontWeight="Bold"/>
             </StackPanel>
         </Border>
 
@@ -191,40 +242,100 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row ="0">
-                <Button>Sơ đồ khách sạn</Button>
+                <Button HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-project-diagram-32.png" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                        <Label  VerticalAlignment="Center" HorizontalAlignment="Left">Sơ đồ khách sạn</Label>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="1">
-                <Button>Khách sạn</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Khách sạn</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="2">
-                <Button>Loại phòng và Giá</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-money-40.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Loại phòng và Giá</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="3">
-                <Button>Dịch vụ và kho</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-coffee-to-go-40.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Dịch vụ và Kho</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="4">
-                <Button>Công nợ</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-attach-144.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Công nợ</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="5">
-                <Button>Tiên chi và thu</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-refresh-40.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Tiên chi và thu</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="6">
-                <Button>Doanh thu</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/calculator-icon.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Doanh thu</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="7">
-                <Button>Thống kê</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-statistics-144.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Thống kê</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="8">
-                <Button>Danh sách hóa đơn</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-bill-256.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Danh sách hóa đơn</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="9">
-                <Button>Kiểm tra $ tài khoản</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-us-dollar-144.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Kiểm tra $ tài khoản</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="10">
-                <Button>Kết quả kinh doanh</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-test-results-150.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Kết quả kinh doanh</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Row ="11">
-                <Button>Báo Cáo</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-report-card-64.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Báo Cáo</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
         </Grid>
     </Grid>

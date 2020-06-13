@@ -32,3 +32,5 @@ C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.csproj.GenerateR
 C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.csproj.CoreCompileInputs.cache
 C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.exe
 C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.pdb
+C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\Views\RoomWindow.g.cs
+C:\SoureGithub\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\Views\RoomWindow.baml
