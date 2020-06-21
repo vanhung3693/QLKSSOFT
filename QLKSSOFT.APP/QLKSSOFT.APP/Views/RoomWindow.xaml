@@ -8,6 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Đặt Phòng" Height="450" Width="800">
     <Grid>
-        
+        <Label>Đặt phòng - 101
+        </Label>
     </Grid>
 </Window>
