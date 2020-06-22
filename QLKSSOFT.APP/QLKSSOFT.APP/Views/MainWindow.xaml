@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QLKSSOFT.APP.Views"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Phần Mềm Quản Lý Khách Sạn ABC" Height="450" Width="800" WindowState="Maximized">
+        Title="Phần Mềm Quản Lý Khách Sạn ABC" Height="Auto" Width="1000" WindowState="Maximized">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -36,6 +36,8 @@
                 <ColumnDefinition Width="5"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Blue" BorderThickness="1">
                 <Grid Grid.Column="0">
@@ -46,19 +48,37 @@
                 </Grid>
             </Border>
             <Grid Grid.Column="2">
-                <Button Background="#FF6262F3" Foreground="White">Chuyển Phòng</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Đặt phòng</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Column="4">
-                <Button Background="#FF6262F3" Foreground="White">Hủy Phòng</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Nhập kho</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Column="6">
-                <Button Background="#FF6262F3" Foreground="White">Gộp Phòng</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Thu chi</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Column="8">
-                <Button Background="#FF6262F3" Foreground="White">Đặt Phòng</Button>
+                <Button Background="#FF6262F3" Foreground="White">HĐ gần đây</Button>
             </Grid>
             <Grid Grid.Column="10">
                 <Button Background="#FF6262F3" Foreground="White">Giao Ca</Button>
+            </Grid>
+            <Grid Grid.Column="12">
+                <Button Background="#FFA02424" Foreground="White" >Bán lẻ</Button>
             </Grid>
         </Grid>
         <Grid Grid.Row="2">
