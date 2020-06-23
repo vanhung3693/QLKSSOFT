@@ -72,13 +72,28 @@
                 </Button>
             </Grid>
             <Grid Grid.Column="8">
-                <Button Background="#FF6262F3" Foreground="White">HĐ gần đây</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">HĐ gần đây</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Column="10">
-                <Button Background="#FF6262F3" Foreground="White">Giao Ca</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Giao Ca</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
             <Grid Grid.Column="12">
-                <Button Background="#FFA02424" Foreground="White" >Bán lẻ</Button>
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="4,4,4,4" Source="../Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Bán lẻ</TextBlock>
+                    </StackPanel>
+                </Button>
             </Grid>
         </Grid>
         <Grid Grid.Row="2">
