@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QLKSSOFT.APP.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Phần Mềm Quản Lý Khách Sạn ABC" Height="Auto" Width="1000" WindowState="Maximized">
@@ -208,14 +209,14 @@
             </StackPanel>
         </Border>
 
-        <Grid Grid.Column="1" Grid.RowSpan="8">
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="8">
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
 
@@ -227,27 +228,38 @@
                     </StackPanel>
                 </Button>
             </Grid>
-            <Grid Grid.Row ="1">
-                <ListBoxItem>
-                    <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
+            <Grid Grid.Row="1">
+                <materialDesign:PackIcon Kind="{Binding Path=Icon}" Width="15" Height="15" Margin="10 16"/>
+                <ListBoxItem x:Name="ListViewItemMenu" Content="Hệ Thống" Padding="37 14"/>
+                <Expander x:Name="ExpanderMenu" Header="Hệ Thống" IsExpanded="False" Width="25" VerticalAlignment="Center"  HorizontalAlignment="Right" Background="{x:Null}">
+                    <ListView x:Name="ListViewMenu" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListViewItem>
+                            <TextBlock>Đăng Nhập</TextBlock>
+                        </ListViewItem>
+                    </ListView>
+                </Expander>
+            </Grid>
+            <!--<Grid Grid.Row ="1">
+                <ListBoxItem x:Name="ListViewItemMenu" Height="30" >
+                    <Button >
                         <StackPanel Orientation="Horizontal">
-                            <Image Margin="4,4,4,4" Width="20" Height="20"  Source="../Image/calculator-icon.png" HorizontalAlignment="Left"/>
-                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Hệ thống</TextBlock>
+                            <Image  Margin="4,4,4,4" Source="../Image/calculator-icon.png" HorizontalAlignment="Left"/>
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Height="13" Width="69">Hệ thống</TextBlock>
                         </StackPanel>
                     </Button>
                 </ListBoxItem>
-                <Expander IsExpanded="False" HorizontalAlignment="Right" >
-                    <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                        <ListViewItem>
-                            <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Margin="30 0 0 0">
+                <Expander x:Name="ExpanderMenu" Background="{x:Null}" IsExpanded="False" HorizontalAlignment="Right" >
+                    <ListView x:Name="ListViewMenu"  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListViewItem Padding="0">
+                            <Button Height="30" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
                                 <StackPanel Orientation="Horizontal">
-                                    <Image  Width="20" Height="20"  Margin="4,4,4,4" Source="../Image/calculator-icon.png" HorizontalAlignment="Left"/>
+                                    <Image Margin="4,4,4,4" Source="../Image/calculator-icon.png" HorizontalAlignment="Left"/>
                                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Đăng nhập</TextBlock>
                                 </StackPanel>
                             </Button>
                         </ListViewItem>
                     </ListView>
-                </Expander>
+                </Expander>-->
                 <!--<StackPanel>
                     <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
                         <StackPanel Orientation="Horizontal">
@@ -287,7 +299,7 @@
                         </StackPanel>
                     </Button>
                 </StackPanel>-->
-            </Grid>
+            <!--</Grid>
             <Grid Grid.Row ="2">
                 <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left">
                     <StackPanel Orientation="Horizontal">
@@ -319,7 +331,7 @@
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Trợ giúp</TextBlock>
                     </StackPanel>
                 </Button>
-            </Grid>
+            </Grid>-->
             <Grid Grid.Row ="6">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="17*"/>

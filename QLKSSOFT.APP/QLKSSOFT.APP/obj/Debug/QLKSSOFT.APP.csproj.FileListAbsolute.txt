@@ -53,3 +53,9 @@ C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.cspro
 C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.csproj.CoreCompileInputs.cache
 C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.exe
 C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.pdb
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\bin\Debug\MaterialDesignColors.dll
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\bin\Debug\MaterialDesignColors.pdb
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\obj\Debug\QLKSSOFT.APP.csproj.CopyComplete
