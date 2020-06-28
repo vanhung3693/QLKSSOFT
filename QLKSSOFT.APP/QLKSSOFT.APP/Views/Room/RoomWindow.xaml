@@ -1,0 +1,60 @@
+﻿<Window x:Class="QLKSSOFT.APP.Views.RoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLKSSOFT.APP.Views"
+        xmlns:controls="clr-namespace:QLKSSOFT.APP.Views.Room"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Phòng"
+        Height="Auto" Width="1000" WindowState="Maximized">
+    <Grid>
+        
+        <!--Content-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Left-->
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <!--Header Left-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Margin="10">
+                    <Button Background="#FF6262F3" FontSize="30" Foreground="White">Vào</Button>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="4*"/>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <controls:HeaderMenu/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                
+            </Grid>
+            
+            
+        </Grid>
+    </Grid>
+</Window>

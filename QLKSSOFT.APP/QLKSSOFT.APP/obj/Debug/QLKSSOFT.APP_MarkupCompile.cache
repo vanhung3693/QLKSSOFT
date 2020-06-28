@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\ProjectGitHub\QLKSSOFT\QLKSSOFT.APP\QLKSSOFT.APP\App.xaml
-31656314803
+41420058984
 
-82092846238
+81950147561
 15401606936
-Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\RoomWindow.xaml;
+Views\Login\LoginWindow.xaml;Views\Home\MainWindow.xaml;Views\Room\HeaderMenu.xaml;Views\Room\RoomWindow.xaml;
 
-True
+False
 
