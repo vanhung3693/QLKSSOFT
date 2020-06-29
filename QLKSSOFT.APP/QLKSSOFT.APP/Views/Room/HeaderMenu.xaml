@@ -14,7 +14,6 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="5"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="5"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
             <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF58FD58" Foreground="White">
