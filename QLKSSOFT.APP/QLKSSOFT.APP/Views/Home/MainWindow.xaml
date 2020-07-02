@@ -57,7 +57,7 @@
                 </Button>
             </Grid>
             <Grid Grid.Column="4">
-                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White" Click="Button_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Margin="4,4,4,4" Source="/Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Nhập kho</TextBlock>
@@ -65,7 +65,7 @@
                 </Button>
             </Grid>
             <Grid Grid.Column="6">
-                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White">
+                <Button Grid.ColumnSpan="2" HorizontalContentAlignment="Left" Background="#FF6262F3" Foreground="White" Click="Button_Click_1">
                     <StackPanel Orientation="Horizontal">
                         <Image Margin="4,4,4,4" Source="/Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Thu chi</TextBlock>
@@ -223,7 +223,7 @@
             <Grid Grid.Row ="0">
                 <TextBlock Grid.ColumnSpan="2">
                     <StackPanel Orientation="Horizontal" Margin="0 20 0 20">
-                        <Image Source="/Image/icons8-refresh-40.png" HorizontalAlignment="Left"/>
+                        <Image Source="/Image/icons8-hotel-50.png" HorizontalAlignment="Left"/>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" FontSize="20">ABC Hotel</TextBlock>
                     </StackPanel>
                 </TextBlock>

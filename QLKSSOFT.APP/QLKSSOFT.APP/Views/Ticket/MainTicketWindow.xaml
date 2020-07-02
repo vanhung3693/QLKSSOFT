@@ -1,0 +1,23 @@
+﻿<Window x:Class="QLKSSOFT.APP.Views.Ticket.MainTicketWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLKSSOFT.APP.Views.Ticket"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Phiếu Thu/ Phiếu Chi" Height="150" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Button FontWeight="Bold" FontSize="24" Background="#FF73D178"> Phiếu Thu</Button>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Button FontSize="24" FontWeight="Bold" Background="#FF7884FF">Phiếu Chi</Button>
+        </Grid>
+    </Grid>
+</Window>

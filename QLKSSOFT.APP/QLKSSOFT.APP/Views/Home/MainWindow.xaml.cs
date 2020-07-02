@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QLKSSOFT.APP.Views.Store;
+using QLKSSOFT.APP.Views.Ticket;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,6 +38,18 @@ namespace QLKSSOFT.APP.Views
         {
             var romWindow = new RoomWindow();
             romWindow.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var storeWindow = new AddStoreWindow();
+            storeWindow.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var ticket = new MainTicketWindow();
+            ticket.Show();
         }
 
         //private void c_dataGridScrollViewer_Loaded(object sender, RoutedEventArgs e)

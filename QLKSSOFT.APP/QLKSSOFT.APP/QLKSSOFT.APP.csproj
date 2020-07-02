@@ -82,6 +82,15 @@
     <Compile Include="Views\Room\RoomWindow.xaml.cs">
       <DependentUpon>RoomWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Store\AddStoreWindow.xaml.cs">
+      <DependentUpon>AddStoreWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ticket\IncomingTicketWindow.xaml.cs">
+      <DependentUpon>IncomingTicketWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ticket\MainTicketWindow.xaml.cs">
+      <DependentUpon>MainTicketWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,6 +137,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Room\RoomWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Store\AddStoreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ticket\IncomingTicketWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ticket\MainTicketWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
